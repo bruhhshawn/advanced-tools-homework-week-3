@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STEM YOGA</title>
+    <style>
+      body {
+        background-color: #eff3e9;
+      }
+      h1 {
+        text-align: center;
+        font-size: 50px;
+        font-style: initial;
+        font-family: fantasy;
+        color: lightcoral;
+      }
+      h2 {
+        text-align: center;
+        font-style: initial;
+        color: #aab29b;
+        border: 1px solid #aab29b;
+        padding: 10px 5px;
+        border-radius: 25px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background: #aab29b;
+        color: white;
+        font-size: 20px;
+        border: none;
+        border-radius: 4px;
+        padding: 25px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        cursor: pointer;
+        opacity: 0.9;
+        background: lightcoral;
+        color: white;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 5px;
+      }
+      p {
+        text-align: center;
+        line-height: 2;
+        color: #495642;
+        font-size: 15px;
+        font-style: initial;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      div {
+        text-align: center;
+        line-height: 2;
+        font-style: initial;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        line-height: 2;
+        color: #495642;
+        font-size: 15px;
+        font-style: initial;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+
+      .benefit {
+        color: lightcoral;
+      }
+      .microdose {
+        text-decoration: none;
+        color: #aab29b;
+        transition: all 500ms ease-in-out;
+      }
+      .microdose:hover {
+        text-decoration: underline;
+        color: lightcoral;
+      }
+      .footer {
+        text-align: center;
+        font-size: 12px;
+        color: #aab29b;
+      }
+      .microdoseB {
+        text-decoration: none;
+        font-weight: bold;
+        color: #aab29b;
+        transition: all 500ms ease-in-out;
+      }
+      .microdoseB:hover {
+        text-decoration: underline;
+        color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>STəM YOGA</h1>
+    <h2>Yoga & Microdosing Workshop</h2>
+    <br />
+    <button class="book-button">BOOK CLASS</button>
+    <br />
+    <br />
+    <img
+      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.ctownchatter.com%2Fwp-content%2Fuploads%2F2020%2F08%2FPractice-These-10-Yoga-Poses-for-Tight-Hamstrings-and-to-Gain-Flexibility.jpg&f=1&nofb=1"
+      alt="yoga"
+    />
+    <br />
+    <br />
+    <p>
+      Enjoy the benefits of <em>yoga and microdosing psilocybin.</em> Together
+      the synergy of both will guide you through a healing journey of
+      enlightment and power. Opening up your energy channel will allow you to
+      connect to your true self.
+      <br />
+      <br />
+      Some of the benefits from yoga and microdosing include...
+    </p>
+    <ul>
+      <li><span class="benefit">Decreased Anxiety</span></li>
+      <li><span class="benefit">Enhanced Mood</span></li>
+      <li><span class="benefit">Productivity</span></li>
+      <li><span class="benefit">Awareness</span></li>
+      <li><span class="benefit">Pain Managment</span></li>
+      <li><span class="benefit">and More!</span></li>
+    </ul>
+    <br />
+
+    <p>
+      Learn more about the
+      <a href="https://stemchocolate.com/" target="_blank" class="microdose">
+        <strong>benefits of microdosing</strong>
+      </a>
+    </p>
+    <br />
+    <hr />
+    <br />
+    <div class="footer">
+      This workshop is sponsored by
+      <a href="https://stemchocolate.com/" target="_blank" class="microdoseB">
+        Stem Chocolate</a
+      >
+    </div>
+    <script>
+      function book() {
+        let age = prompt("Are you 19+ ?");
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+
+        if (age === "yes") {
+          let h2 = document.querySelector("h2");
+          h2.innerHTML = "Thank You " + name + "! We will be in touch soon😄";
+        } else {
+          let h2 = document.querySelector("h2");
+          h2.innerHTML =
+            "Sorry " + name + ", You are not old enough to book a class😔";
+        }
+      }
+      let bookButton = document.querySelector(".book-button");
+      bookButton.addEventListener("click", book);
+    </script>
+  </body>
+</html>
